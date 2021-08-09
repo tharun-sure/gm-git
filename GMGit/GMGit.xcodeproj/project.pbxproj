@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F36621AF8FB1F164FCA5BBC /* Pods_GMGitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D420282D022BEF056EFC54 /* Pods_GMGitTests.framework */; };
 		954C7B0F26BDFDFE008537C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7B0E26BDFDFE008537C3 /* AppDelegate.swift */; };
 		954C7B1126BDFDFE008537C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7B1026BDFDFE008537C3 /* SceneDelegate.swift */; };
 		954C7B1626BDFDFE008537C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954C7B1426BDFDFE008537C3 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 		954C7B4B26C1B38F008537C3 /* CommitsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7B4A26C1B38F008537C3 /* CommitsTableView.swift */; };
 		954C7B4E26C1B455008537C3 /* CommitTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7B4D26C1B455008537C3 /* CommitTableCell.swift */; };
 		954C7B5326C1B59C008537C3 /* CommitTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 954C7B5226C1B59C008537C3 /* CommitTableCell.xib */; };
+		CFA2AF6080B6F92DD5DCB91D /* Pods_GMGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AB901AF2B65332DF981ACA /* Pods_GMGit.framework */; };
+		E00F8C0DD4C359DB8751E43A /* Pods_GMGit_GMGitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2724B7E22136528F22916 /* Pods_GMGit_GMGitUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DA57249BF2C7FFD16BB26FB /* Pods-GMGit-GMGitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGit-GMGitUITests.debug.xcconfig"; path = "Target Support Files/Pods-GMGit-GMGitUITests/Pods-GMGit-GMGitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		21AB901AF2B65332DF981ACA /* Pods_GMGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CEB4544042488676E649D4 /* Pods-GMGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGit.release.xcconfig"; path = "Target Support Files/Pods-GMGit/Pods-GMGit.release.xcconfig"; sourceTree = "<group>"; };
+		31C2D4B789B648CBB3BCE58C /* Pods-GMGitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGitTests.release.xcconfig"; path = "Target Support Files/Pods-GMGitTests/Pods-GMGitTests.release.xcconfig"; sourceTree = "<group>"; };
+		58D420282D022BEF056EFC54 /* Pods_GMGitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMGitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		874723AEEF1730C616C29D45 /* Pods-GMGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGit.debug.xcconfig"; path = "Target Support Files/Pods-GMGit/Pods-GMGit.debug.xcconfig"; sourceTree = "<group>"; };
 		954C7B0B26BDFDFE008537C3 /* GMGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954C7B0E26BDFDFE008537C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		954C7B1026BDFDFE008537C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +68,9 @@
 		954C7B4A26C1B38F008537C3 /* CommitsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsTableView.swift; sourceTree = "<group>"; };
 		954C7B4D26C1B455008537C3 /* CommitTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTableCell.swift; sourceTree = "<group>"; };
 		954C7B5226C1B59C008537C3 /* CommitTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitTableCell.xib; sourceTree = "<group>"; };
+		BFF2724B7E22136528F22916 /* Pods_GMGit_GMGitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMGit_GMGitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1BDFF3A62C4B16D4C0F1E0 /* Pods-GMGit-GMGitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGit-GMGitUITests.release.xcconfig"; path = "Target Support Files/Pods-GMGit-GMGitUITests/Pods-GMGit-GMGitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F633169E201F980A4F082502 /* Pods-GMGitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGitTests.debug.xcconfig"; path = "Target Support Files/Pods-GMGitTests/Pods-GMGitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA2AF6080B6F92DD5DCB91D /* Pods_GMGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F36621AF8FB1F164FCA5BBC /* Pods_GMGitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00F8C0DD4C359DB8751E43A /* Pods_GMGit_GMGitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57290EA81BF3BAE76651C6FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				874723AEEF1730C616C29D45 /* Pods-GMGit.debug.xcconfig */,
+				28CEB4544042488676E649D4 /* Pods-GMGit.release.xcconfig */,
+				1DA57249BF2C7FFD16BB26FB /* Pods-GMGit-GMGitUITests.debug.xcconfig */,
+				DF1BDFF3A62C4B16D4C0F1E0 /* Pods-GMGit-GMGitUITests.release.xcconfig */,
+				F633169E201F980A4F082502 /* Pods-GMGitTests.debug.xcconfig */,
+				31C2D4B789B648CBB3BCE58C /* Pods-GMGitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		954C7B0226BDFDFE008537C3 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +121,8 @@
 				954C7B2426BDFE01008537C3 /* GMGitTests */,
 				954C7B2F26BDFE01008537C3 /* GMGitUITests */,
 				954C7B0C26BDFDFE008537C3 /* Products */,
+				57290EA81BF3BAE76651C6FB /* Pods */,
+				D83E9C23213A6ECEEAFA8C29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +213,16 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		D83E9C23213A6ECEEAFA8C29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21AB901AF2B65332DF981ACA /* Pods_GMGit.framework */,
+				BFF2724B7E22136528F22916 /* Pods_GMGit_GMGitUITests.framework */,
+				58D420282D022BEF056EFC54 /* Pods_GMGitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 954C7B3526BDFE01008537C3 /* Build configuration list for PBXNativeTarget "GMGit" */;
 			buildPhases = (
+				21EF188FFBE381D8DF8DA35E /* [CP] Check Pods Manifest.lock */,
 				954C7B0726BDFDFE008537C3 /* Sources */,
 				954C7B0826BDFDFE008537C3 /* Frameworks */,
 				954C7B0926BDFDFE008537C3 /* Resources */,
+				44B6DD55817E5811CC426BB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 954C7B3826BDFE01008537C3 /* Build configuration list for PBXNativeTarget "GMGitTests" */;
 			buildPhases = (
+				335D49B156E4BF41977D9CA2 /* [CP] Check Pods Manifest.lock */,
 				954C7B1D26BDFE01008537C3 /* Sources */,
 				954C7B1E26BDFE01008537C3 /* Frameworks */,
 				954C7B1F26BDFE01008537C3 /* Resources */,
@@ -225,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 954C7B3B26BDFE01008537C3 /* Build configuration list for PBXNativeTarget "GMGitUITests" */;
 			buildPhases = (
+				FB432D8D2C6898DC94DAD402 /* [CP] Check Pods Manifest.lock */,
 				954C7B2826BDFE01008537C3 /* Sources */,
 				954C7B2926BDFE01008537C3 /* Frameworks */,
 				954C7B2A26BDFE01008537C3 /* Resources */,
+				F0BAA35E80567A1AB24EAC3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +353,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21EF188FFBE381D8DF8DA35E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMGit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		335D49B156E4BF41977D9CA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMGitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44B6DD55817E5811CC426BB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMGit/Pods-GMGit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMGit/Pods-GMGit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMGit/Pods-GMGit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0BAA35E80567A1AB24EAC3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMGit-GMGitUITests/Pods-GMGit-GMGitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMGit-GMGitUITests/Pods-GMGit-GMGitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMGit-GMGitUITests/Pods-GMGit-GMGitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB432D8D2C6898DC94DAD402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMGit-GMGitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		954C7B0726BDFDFE008537C3 /* Sources */ = {
@@ -493,10 +641,12 @@
 		};
 		954C7B3626BDFE01008537C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874723AEEF1730C616C29D45 /* Pods-GMGit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GMGit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,6 +654,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gm.gm.GMGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -511,10 +662,12 @@
 		};
 		954C7B3726BDFE01008537C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28CEB4544042488676E649D4 /* Pods-GMGit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GMGit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +675,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gm.gm.GMGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -529,8 +683,9 @@
 		};
 		954C7B3926BDFE01008537C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F633169E201F980A4F082502 /* Pods-GMGitTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GMGitTests/Info.plist;
@@ -550,8 +705,9 @@
 		};
 		954C7B3A26BDFE01008537C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C2D4B789B648CBB3BCE58C /* Pods-GMGitTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GMGitTests/Info.plist;
@@ -571,8 +727,9 @@
 		};
 		954C7B3C26BDFE01008537C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA57249BF2C7FFD16BB26FB /* Pods-GMGit-GMGitUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GMGitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -590,8 +747,9 @@
 		};
 		954C7B3D26BDFE01008537C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1BDFF3A62C4B16D4C0F1E0 /* Pods-GMGit-GMGitUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GMGitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

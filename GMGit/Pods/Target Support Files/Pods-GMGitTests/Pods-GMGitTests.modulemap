@@ -1,0 +1,6 @@
+framework module Pods_GMGitTests {
+  umbrella header "Pods-GMGitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
