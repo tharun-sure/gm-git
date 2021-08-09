@@ -7,6 +7,17 @@
 
 import Foundation
 
-struct GMGitModel {
-    
+
+struct Author: Codable {
+    var name: String? = ""
+}
+
+struct Commit: Codable {
+    var author: Author?
+    var message: String? = ""
+}
+
+struct Commits: Codable {
+    var sha: String? = ""
+    var commit: Commit
 }
