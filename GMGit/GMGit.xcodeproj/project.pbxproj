@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F36621AF8FB1F164FCA5BBC /* Pods_GMGitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D420282D022BEF056EFC54 /* Pods_GMGitTests.framework */; };
+		9520DC5B26C1DCBD00EBA9C5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520DC5A26C1DCBD00EBA9C5 /* APIManager.swift */; };
 		954C7B0F26BDFDFE008537C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7B0E26BDFDFE008537C3 /* AppDelegate.swift */; };
 		954C7B1126BDFDFE008537C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7B1026BDFDFE008537C3 /* SceneDelegate.swift */; };
 		954C7B1626BDFDFE008537C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954C7B1426BDFDFE008537C3 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		31C2D4B789B648CBB3BCE58C /* Pods-GMGitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGitTests.release.xcconfig"; path = "Target Support Files/Pods-GMGitTests/Pods-GMGitTests.release.xcconfig"; sourceTree = "<group>"; };
 		58D420282D022BEF056EFC54 /* Pods_GMGitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMGitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		874723AEEF1730C616C29D45 /* Pods-GMGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGit.debug.xcconfig"; path = "Target Support Files/Pods-GMGit/Pods-GMGit.debug.xcconfig"; sourceTree = "<group>"; };
+		9520DC5A26C1DCBD00EBA9C5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		954C7B0B26BDFDFE008537C3 /* GMGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954C7B0E26BDFDFE008537C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		954C7B1026BDFDFE008537C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9520DC5C26C1DCEC00EBA9C5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9520DC5A26C1DCBD00EBA9C5 /* APIManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		954C7B0226BDFDFE008537C3 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 				954C7B4626C1B1EA008537C3 /* Model */,
 				954C7B4426C1B1D5008537C3 /* View */,
 				954C7B4526C1B1DF008537C3 /* ViewModel */,
+				9520DC5C26C1DCEC00EBA9C5 /* Network */,
 				954C7B0E26BDFDFE008537C3 /* AppDelegate.swift */,
 				954C7B1026BDFDFE008537C3 /* SceneDelegate.swift */,
 				954C7B1426BDFDFE008537C3 /* Main.storyboard */,
@@ -462,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9520DC5B26C1DCBD00EBA9C5 /* APIManager.swift in Sources */,
 				954C7B4B26C1B38F008537C3 /* CommitsTableView.swift in Sources */,
 				954C7B0F26BDFDFE008537C3 /* AppDelegate.swift in Sources */,
 				954C7B1126BDFDFE008537C3 /* SceneDelegate.swift in Sources */,
