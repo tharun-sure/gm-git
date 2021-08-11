@@ -9,6 +9,10 @@ import Foundation
 
 class GMGitViewModel: NSObject {
     
+    let apiManager: APIManagerProtocol
+    
+    var errorMessage: String?
+    
     var commitData: [Commits]? {
         didSet {
             self.bindGMGitViewModelToController()
@@ -17,14 +21,19 @@ class GMGitViewModel: NSObject {
     
     var bindGMGitViewModelToController: (() -> ()) = {}
     
-    override init() {
-        super.init()
-        getGitData()
+    init(apiManager: APIManagerProtocol = APIManager()) {
+        self.apiManager = apiManager
     }
     
     func getGitData() {
-        APIManager.shared.getCommitsAPI(owner: "Alamofire", repo: "Alamofire") { commitData in
-            self.commitData = commitData
+        apiManager.getCommitsAPI(owner: "Alamofire", repo: "Alamofire") { [weak self] commitData, error in
+            if let error = error {
+                self?.errorMessage = error.localizedDescription
+                print(error.localizedDescription)
+            }
+            else {
+                self?.commitData = commitData
+            }
         }
     }
 }

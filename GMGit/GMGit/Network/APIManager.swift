@@ -12,10 +12,8 @@ let base_url = "https://api.github.com/"
 
 let commits = base_url + "repos/%@/%@/commits"
 
-class APIManager: NSObject {
-    
-    static let shared : APIManager = { return APIManager() }()
-    
+class APIManager: APIManagerProtocol {
+        
     var lastRequest: DataRequest? = nil
     
     func callPostAPI(_ url: String,_ params: [String: Any]? = nil, completion:((_ res: DataResponse<Any>?, String?) -> Void)?) {
@@ -31,6 +29,7 @@ class APIManager: NSObject {
             }
         })
     }
+    
     func callGetAPI(_ url: String,_ params: [String: Any]? = nil, completion:((_ res: DataResponse<Any>?,_ data: Data?, String?) -> Void)?) {
         self.lastRequest = Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default)
         self.lastRequest?.session.configuration.timeoutIntervalForRequest = 3*60
@@ -45,21 +44,41 @@ class APIManager: NSObject {
         })
     }
     
-    func getCommitsAPI(owner: String, repo: String, completion:((_ commits: [Commits]) -> Void)?) {
+    func getCommitsAPI(owner: String, repo: String, completion: @escaping ([Commits], Error?) -> ()) {
         let url = String.init(format: commits, owner, repo)
-        callGetAPI(url) { result, data, message in
+        callGetAPI(url) { response, data, message in
             let decoder = JSONDecoder()
-            if let jsonData = data {
-                do {
-                    let commits = try decoder.decode([Commits].self, from: jsonData)
-                    completion? (commits)
-                } catch {
-                    print(error)
-                    completion? ([])
+            
+            let result = response?.result
+            
+            switch result {
+            case .success(_):
+                if let jsonData = data {
+                    do {
+                        let commits = try decoder.decode([Commits].self, from: jsonData)
+                        completion(commits, nil)
+                    } catch {
+                        completion([], error)
+                    }
                 }
-            }
-            else {
-                completion? ([])
+                else {
+                    completion([], nil)
+                }
+            case .failure(let error):
+                if let urlError = error as? URLError {
+                    switch urlError.code {
+                    case .timedOut:
+                        print("Timed out error!")
+                    case .notConnectedToInternet:
+                        print("Not connected to Internet!")
+                    default:
+                        print("Unmanaged error!")
+                    }
+                    
+                    completion([], error)
+                }
+            case .none:
+                break
             }
         }
     }

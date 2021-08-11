@@ -17,7 +17,7 @@ struct Commit: Codable {
     var message: String? = ""
 }
 
-struct Commits: Codable {
+public struct Commits: Codable {
     var sha: String? = ""
     var commit: Commit
 }

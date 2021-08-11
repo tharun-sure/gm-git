@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2F36621AF8FB1F164FCA5BBC /* Pods_GMGitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D420282D022BEF056EFC54 /* Pods_GMGitTests.framework */; };
 		9520DC5B26C1DCBD00EBA9C5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520DC5A26C1DCBD00EBA9C5 /* APIManager.swift */; };
+		9520DC5E26C316C900EBA9C5 /* APIManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520DC5D26C316C900EBA9C5 /* APIManagerProtocol.swift */; };
+		9520DC6026C31C8B00EBA9C5 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520DC5F26C31C8B00EBA9C5 /* MockAPIManager.swift */; };
+		9520DC6226C3534300EBA9C5 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520DC6126C3534300EBA9C5 /* APIManagerTests.swift */; };
 		954C7B0F26BDFDFE008537C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7B0E26BDFDFE008537C3 /* AppDelegate.swift */; };
 		954C7B1126BDFDFE008537C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7B1026BDFDFE008537C3 /* SceneDelegate.swift */; };
 		954C7B1626BDFDFE008537C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954C7B1426BDFDFE008537C3 /* Main.storyboard */; };
@@ -51,6 +54,9 @@
 		58D420282D022BEF056EFC54 /* Pods_GMGitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMGitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		874723AEEF1730C616C29D45 /* Pods-GMGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMGit.debug.xcconfig"; path = "Target Support Files/Pods-GMGit/Pods-GMGit.debug.xcconfig"; sourceTree = "<group>"; };
 		9520DC5A26C1DCBD00EBA9C5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9520DC5D26C316C900EBA9C5 /* APIManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerProtocol.swift; sourceTree = "<group>"; };
+		9520DC5F26C31C8B00EBA9C5 /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
+		9520DC6126C3534300EBA9C5 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
 		954C7B0B26BDFDFE008537C3 /* GMGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954C7B0E26BDFDFE008537C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		954C7B1026BDFDFE008537C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +165,8 @@
 				954C7B1726BDFE01008537C3 /* Assets.xcassets */,
 				954C7B1926BDFE01008537C3 /* LaunchScreen.storyboard */,
 				954C7B1C26BDFE01008537C3 /* Info.plist */,
+				9520DC5D26C316C900EBA9C5 /* APIManagerProtocol.swift */,
+				9520DC5F26C31C8B00EBA9C5 /* MockAPIManager.swift */,
 			);
 			path = GMGit;
 			sourceTree = "<group>";
@@ -166,6 +174,7 @@
 		954C7B2426BDFE01008537C3 /* GMGitTests */ = {
 			isa = PBXGroup;
 			children = (
+				9520DC6126C3534300EBA9C5 /* APIManagerTests.swift */,
 				954C7B2526BDFE01008537C3 /* GMGitTests.swift */,
 				954C7B2726BDFE01008537C3 /* Info.plist */,
 			);
@@ -474,12 +483,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9520DC5B26C1DCBD00EBA9C5 /* APIManager.swift in Sources */,
+				9520DC5E26C316C900EBA9C5 /* APIManagerProtocol.swift in Sources */,
 				954C7B4B26C1B38F008537C3 /* CommitsTableView.swift in Sources */,
 				954C7B0F26BDFDFE008537C3 /* AppDelegate.swift in Sources */,
 				954C7B1126BDFDFE008537C3 /* SceneDelegate.swift in Sources */,
 				954C7B3F26C18072008537C3 /* GMGitViewController.swift in Sources */,
 				954C7B4326C1819E008537C3 /* GMGitModel.swift in Sources */,
 				954C7B4E26C1B455008537C3 /* CommitTableCell.swift in Sources */,
+				9520DC6026C31C8B00EBA9C5 /* MockAPIManager.swift in Sources */,
 				954C7B4126C1818C008537C3 /* GMGitViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9520DC6226C3534300EBA9C5 /* APIManagerTests.swift in Sources */,
 				954C7B2626BDFE01008537C3 /* GMGitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

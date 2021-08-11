@@ -19,6 +19,7 @@ class GMGitViewController: UIViewController {
     
     func updateUI() {
         gmGitViewModel = GMGitViewModel()
+        gmGitViewModel.getGitData()
         gmGitViewModel.bindGMGitViewModelToController = {
             self.updateDataSource()
         }
